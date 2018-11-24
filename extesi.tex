@@ -9,7 +9,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%libreria per scrivere in italiano
 \usepackage[italian]{babel}
 
-\usepackage{float}
+%\usepackage{float}
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{color}
@@ -101,7 +101,63 @@ INTRODUZIONE}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%aggiunge la voce Introduzione
                                         %   nell'indice
 \addcontentsline{toc}{chapter}{Introduzione}
-Questa \`e l'introduzione.
+Negli ultimi decenni abbiamo assistito ad un notevole progresso delle reti di telecomunicazioni che ha del tutto rivoluzionato il modo di comunicare ed interagire delle persone. Gli imponenti investimenti economici e le ricerche scientifiche hanno permesso di sviluppare tecnologie che aumentano l'efficienza con cui vengono scambiate le informazioni.
+Li sforzi sinora condotti si sono concentrati nell'aumentare la capacit\`a di trasferimento per l'invio di maggiori volumi di dati. 
+Si pensi ad esempio alla rapida evoluzione delle reti mobile 2G, 3G, 4G e prossimamente 5G che permettono lo scambio di contenuti ad altissime prestazioni in mobilit\`a. Questo progresso tecnologico ha totalmente stravolto il paradigma di comunicazione e di come le persone interagiscono sia tra di loro che con le macchine. La grande ricchezza della societ\`a moderna sono i dati, ma anche come questi vengono trasferiti. 
+
+
+Tuttavia la grande svolta delle telecomunicazioni riguarder\`a sempre pi\`u lo scambio di dati tra macchine, segnando un cambiamento epocale in cui gli oggetti diventano intelligenti.  
+Dalla rivoluzione industriale ad oggi, i progressi tecnologici occorsi nella civilt\`a possono essere visti come il tentativo dell'uomo di creare agenti esecutori artificiali sempre pi\`u complessi a cui demandare i requisiti delle attivit\`a di controllo. Da diverso tempo si sente parlare della cosiddetta frontiera Industria 4.0, cos\`i denominata perch\`e evoca una ``quarta rivoluzione industriale''  ovvero una nuova evoluzione tecnologica che porter\`a diversi ambiti produttivi ad essere del tutto automatizzati e connessi \cite{K25}.
+La prima rivoluzione industriale ha visto protagonista la nascita della meccanizzazione, impianti idroelettrici e sistemi a vapore. La seconda fase dell'era industriale ha permesso la diffusione dell'elettricit\`a delle catene di montaggio e produzione di massa. Il secolo scorso \`e stato segnato dalla diffusione delle tecnologie informatiche e dall'automazione dei processi che hanno dato vita alla terza fase dell'evoluzione industriale. L'ultimo stadio evolutivo prevede la pervasivit\`a dei sistemi di comunicazione applicati alle macchine che hanno permesso la nascita di un nuovo paradigma di comunicazione chiamato Machine-To-Machine (M2M) \cite{K26}. In questo modo l'essere umano ha sempre meno incidenza sul ciclo produttivo in quanto le macchine sono in grado di interagire tra di loro scambiando informazioni al fine di poter attuare azioni sulla base di decisioni recepite dall'analisi del contesto. Lo sviluppo di sistemi integrati consente l'invio di dati in modo totalmente automatico da parte di dispositivi che sono interconnessi tra loro attraverso il network.
+Le reti ``tradizionali'', sono state progettate con prerogative diverse rispetto ai requisiti richiesti in ambito M2M. 
+L'evoluzione delle LAN (Local Area Network) e di Internet ha visto, nel corso del tempo, come protagonista l'aumento del throughput ovvero la quantit\`a di dati trasmessi in una unit\`a di tempo. 
+Le comunicazioni M2M, invece, nell'ottica del sensing e automation necessitano di scambiare piccole quantit\`a di informazioni. Molto spesso il sensing viene fatto attraverso dispositivi alimentati a batteria, pertanto il consumo energetico diventa un requisito fondamentale alla base della progettazione di sistemi intelligenti.
+Tipicamente si prediligono comunicazioni wireless soprattutto in luoghi privi di cablaggio strutturato.    Per questo motivo negli ultimi anni sono state sviluppate le LR-WPAN (Low Rate-Wireless Personal Area Network) e le LPWAN (Low Power Wide Area Network).  
+
+Le comunicazioni M2M possono realizzarsi anche attraverso protocollo IP, dando la possibilit\`a di scambiare informazioni tra macchine e sistemi informativi e pertanto sono associate alla cosiddetta Internet of Things (IoT).
+I termini M2M e IoT sono spesso usati indistintamente, tuttavia esistono delle differenze sostanziali. La principale \`e che mentre IoT ha bisogno della tecnologia M2M, non \`e vero il contrario. Sebbene entrambi permettono la comunicazione tra dispositivi, con il paradigma M2M ci si limita a considerare le singole apparecchiature collegate in rete in un sistema chiuso, mentre IoT consente di interconnettere pi\`u sottosistemi M2M in un sistema che interagisce con l'ambiente fisico (oggetti connessi, Smart Objects) e con le persone.
+I sistemi basati su M2M utilizzano trasmissioni point-to-point tra dispositivi, con i sensori e l'hardware dedicato che viaggia su varie tipologie di reti (wireless o cablate), mentre i sistemi IoT operano su reti basate su protocollo IP per inviare e gestire i dati raccolti ad apparati di rete specifici quali gateway, middleware o piattaforme cloud.
+Uno dei motivi di successo di IoT \`e l'abbattimento dei costi di produzione delle componenti elettroniche con cui \`e possibile assemblare e costruire dispositivi e sensori. L'evoluzione tecnologica prevede quattro principali direzioni di intervento \cite{K27} :
+\begin{itemize}                       
+\item Sistemi cibernetici avanzati (CPS, Cyber-Physical System): Evoluzione di macchine integrando nuovi sistemi di comunicazione e connettivit\`a tra sistemi di produzione. Questi sistemi hanno l'obiettivo di migliorare l'automazione e l'interazione M2M oltre alla realizzazione di specifici sistemi robotici avanzati.
+\item Sistemi Human-To-Machine: Soluzioni tese a migliorare le interazioni tra uomo e macchina attraverso strategie che cercano di aumentare le competenze sensitive e cognitive creando un'integrazione fisica tra l'agente umano e la macchina.
+\item Sistemi analitici: Sviluppo di software in grado di realizzare soluzioni di machine learning con l'obiettivo di incrementare le capacit\`a deduttive dei sistemi informativi utilizzando approcci adattivi che consentirebbero di ``imparare'' partendo dai dati raccolti e analizzati.
+\item Sistemi Big Data: Sviluppo di nuove soluzioni IT per migliorare la gestione di grandi moli di dati e informazioni operando a diversi livelli come acquisizione, centralizzazione, archiviazione e potenza di calcolo. Viene data anche molta enfasi alla connettivit\`a tra sistemi extra-impresa facendo uso della rete sfruttando le potenzialit\`a degli Open Data, IoT e Cloud Computing.
+\end{itemize}
+
+Le potenzialit\`a offerte da questi nuovi paradigmi di comunicazione sono innumerevoli e lasciano spazio allo sviluppo di applicazioni in diversi ambiti. Le direzioni di intervento non riguardano solo l'industria, ma abbracciano diverse sfere come il monitoraggio ambientale, la cura delle persone, il miglioramento dei processi umani, la meteorologia e tanti altri.
+Il ruolo dei dati all'interno delle organizzazioni diventa sempre pi\`u strategico. Il ciclo di vita dell'informazione si articola  su quattro fasi \cite{K27}:
+\begin{itemize}                       
+\item Raccolta: I dati grezzi vengono prelevati dall'ambiente attraverso l'uso di sensori e dispositivi.
+\item Elaborazione: Le informazioni vengono inviate ai sistemi informativi per poter essere processate e memorizzate.
+\item Analisi: Le piattaforme di data analytics permettono di estrarre conoscenza intrinseca.
+\item Utilizzo: La fase di analisi \`e propedeutica al processo decisionale al fine di elaborare strategie ed attuare azioni.
+\end{itemize}
+
+Di pari passo allo sviluppo delle tecnologie IoT, nasce l'esigenza di archiviare ed analizzare volumi di dati considerevoli. I sistemi informativi sono evoluti per poter sopperire alla criticit\`a della gestione di enormi moli di informazioni. 
+IoT, Big Data e Intelligenza Artificiale sono tre discipline che appartengono ad ambiti differenti ma strettamente correlate tra loro in quanto hanno bisogno l'una dell'altra per massimizzare l'efficacia dei loro processi. 
+In questo contesto le piattaforme di data analytics forniscono un notevole contributo nella realizzazione di una pipeline che permette di gestire il dato dalla sua raccolta fino alla elaborazione di decisioni da parte di automi.
+
+In questa tesi verr\`a presentata un'infrastruttura che permette la gestione del ciclo di vita del dato dalla raccolta all'analisi. Nello specifico \`e stata realizzata una pipeline che consente di raccogliere dati dall'ambiente e di poterli analizzare tramite una piattaforma di data analytics.
+Il sensing viene fatto da un sensore e l'informazione inviata mediante trasmissione LoRa, una tecnologia wireless che si colloca nella categoria LPWAN. L'infrastruttura LoRaWAN consente di trasferire i dati dall'end device a cui \`e collegato il sensore verso la piattaforma di data analytics.
+
+L'elaborato \`e suddiviso in due parti. Nella prima parte, denominata ``stato dell'arte'', viene fatta una panoramica generale dell'ambito tecnologico di riferimento.
+Nel capitolo uno vengono introdotti i principi generali delle caratteristiche dei sistemi wireless. Nel secondo capitolo \`e stato affrontato il tema delle reti LR-WPAN in cui vengono descritte le reti di sensori a corto e medio raggio. Qui viene anche presentato 6LowPAN ovvero un protocollo di livello network basato su IPv6 adattato al contesto delle LR-WPAN.
+Si \`e scelto di affrontare il tema delle LR-WPAN e 6LowPAN in quanto attraverso la comprensione dei limiti di questa tecnologia si \`e in grado di cogliere quali sono le motivazioni che hanno portato alla nascita delle reti LPWAN.
+Nel terzo capitolo viene fatta un'ampia panoramica sulle reti LPWAN e di tutte le tecnologie che afferiscono a questa categoria. 
+Nel capitolo quattro viene approfondito l'argomento su cui si concentra questa tesi ovvero LoRa e LoRAWAN, una delle tecnologie LPWAN di maggiore successo. 
+Nei capitoli quattro e cinque vengono presentati rispettivamente gli standard LPWAN e le problematiche aperte e sviluppi futuri.  
+
+La seconda parte della tesi riguarda la fase sperimentale. 
+L'obiettivo della sperimentazione \`e quello di analizzare le metriche relative alla trasmissione LoRa per valutare le performance in contesti ambientali differenti. 
+Gli esperimenti sono stati condotti in ambiente rurale e metropolitano con lo scopo di poter confrontare come cambia la propagazione del segnale radio. 
+Per la valutazione delle metriche sono stati condotti numerosi test che hanno permesso la raccolta di dati al fine di poter definire quali sono le configurazioni ottimali dei dispositivi con lo scopo di ottenere la massima efficienza della trasmissione LoRa. 
+Nel capitolo sette verr\`a presentata l'architettura del sistema, le scelte progettuali e la pipeline dei dati. Il capitolo otto tratta come sono state implementate tutte le componenti dell'infrastruttura. Nel capitolo nove viene presentata la sperimentazione, come sono stati condotti i test ed i risultai ottenuti. Il capitolo dieci conclude l'elaborato con li sviluppi futuri e le conclusioni.
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%non numera l'ultima pagina sinistra
 \clearpage{\pagestyle{empty}\cleardoublepage}
 \tableofcontents                        %crea l'indice
@@ -1523,33 +1579,37 @@ Considerato il fatto che le tecnologie LPWAN sono progettate per trasmettere sol
 
 
 \part{Obiettivo della tesi}
-
-L'elaborato consiste nella progettazione e implementazione di un'infrastruttura LoRaWAN e della piattaforma di data analytics. In modo particolare \`e stata sviluppata tutta la pipeline dalla raccolta dei dati provenienti dai sensori fino all'analisi. 
-Nella fattispecie, in questa tesi, la piattaforma di data analytics \`e stata impiegata per analizzare i dati relativi alla trasmissione radio LoRa, al fine di valutarne le performance.
-I dati raccolti possono essere impiegati 
-
+L'elaborato consiste nella progettazione e implementazione sia di un'infrastruttura LoRaWAN, che della relativa piattaforma di data analytics. In modo particolare \`e stata sviluppata tutta la pipeline dalla raccolta dei dati provenienti dai sensori fino all'analisi. 
+Nella fattispecie, in questa tesi, la piattaforma di data analytics \`e stata impiegata per analizzare i dati relativi alla QoS della trasmissione radio LoRa.
+Lo studio relativo alle performance fornisce informazioni utili su come fare tuning della tecnologia LoRa per la realizzazione di una rete LoRAWAN che sia in grado di operare in ambienti differenti.
+Il sistema realizzato pu\`o essere impiegato in diversi contesti applicativi. Tuttavia per la tipologia di sperimentazione effettuata, sono state fatte considerazioni in merito ad applicazioni in ambito di monitoraggio ambientale.
+La piattaforma di data analytics permette di raccogliere ed aggregare i dati in modo da rendere pi\`u agile il processo di analisi. 
 
 \chapter{Progettazione}
-Nel precedente capitolo \`e stata fatta una panoramica sulle principali tecnologie e standards LPWAN, descrivendo punti di forza e debolezza per ognuna di esse.  
-LoRa sta attirando l'attenzione di molti operatori del settore, in quanto riesce a coniugare buone performance di trasmissione, risparmio energetico e bassi costi di produzione.
-In ambito IoT esistono una pluralit\`a di soluzioni per implementare un'applicazione. La progettazione viene guidata dai requisiti ambientali, dalle performance minime necessarie a garantire il livello di servizio e dai costi di realizzazione dell'infrastruttura.
-In questa sperimentazione verranno analizzate le performance di un'infrastruttura LoRaWAN, al fine di poter valutare l'adeguatezza di questa soluzione per possibili scenari applicativi. 
-Per misurare le performance di una trasmissione LoRa sono state analizzati alcuni parametri che caratterizzano la QoS (Quality Of Service). L'analisi \`e stata fatta sulla base di tests reali che hanno permesso di raccogliere i dati necessari alla valutazione delle performance. 
-La sperimentazione si articola di diverse fasi:
+L'infrastruttura \`e stata progettata seguendo le specifiche LoRaWAN e pu\`o essere impiegata in diverse contesti applicativi in cui vi sia la necessit\`a di raccogliere dati provenienti dall'ambiente e di poterli elaborare successivamente. Uno scenario applicativo tipico di un'infrastruttura di questo tipo \`e il monitoraggio ambientale. A tale scopo l'end device \`e dotato di un sensore di temperatura e umidit\`a per poter mostare un esempio di come sia possibile analizzare in tempo reale dati ambientali.   
+
+\section{Architettura del sistema}
+Come da specifiche, l'architettura di un sistema LoRaWAN si compone di: 
 \begin{itemize}                       
-\item Definizione degli obiettivi da raggiungere e cosa si vuole analizzare.
-\item Progettazione ed implementazione del sistema usato per l'analisi.
-\item Test e raccolta dei dati. 
-\item Aggregazione e analisi dei dati ottenuti.
-\item Valutazione dei risultati.
+\item LoRa Node (End Device): Dispositivo in grado di trasmettere dati via LoRa.
+\item LoRaWAN Gateway: Dispositivo in grado di ricevere dati da uno o pi\`u end device e di trasmetterli attraverso rete TCP/IP al network server.
+\item Network Server: Sistema di back-end che ha la funzione di coordinare le trasmissioni degli end device all'interno della rete LoRaWAN.
+\item Application Server: Sistema in grado di elaborare i dati ricevuti e di presentarli in maniera aggregata.
+\end{itemize}
+Ai fini della sperimentazione \`e stata implementata un'architettura LoRaWAN semplificata, in quanto priva del ruolo di network server. Il motivo deriva dal fatto che \`e stato usato un solo end device quindi le funzionalit\`a offerte dal network server non sono necessarie.  
+
+L'infrastruttura del sistema sistema sviluppato si compone dei seguenti nodi:
+\begin{itemize}                       
+\item LoRa Node (End Device): Scheda di prototipazione in grado di generare e trasmettere segnali LoRa.   
+\item LoRaWAN Gateway: Dispositivo in grado di ricevere i dati dall' end device e di trasmetterli attraverso Internet all'application server. Questo nodo non effettua nessuna elaborazione o trasformazione del dato ma si limita ad instradare i pacchetti da rete LoRaWAN a rete TCP/IP.  
+\item Application Server: Espone mediante web service un'iterfaccia per la ricezione dei dati provenienti dal nodo gateway. I dati vengono parzialmente elaborati ed inviati all'egine di archiviazione.
+\item Search Engine: Sistema di archiviazione basato su paradigma NoSQL in grado di gestire le ricerche per real-time analytics.  
 \end{itemize}
 
-
-\section{Scelte progettuali}
+ \section{Scelte progettuali}
 I tests per la raccolta dei dati ai fini della sperimentazione non sono stati effettuati con tool di simulazione, ma bens\`i attraverso l'uso di dispositivi dotati di ricevitore LoRa in grado di trasmettere e ricevere dati. 
-Per questo motivo \`e stato necessario progettare un'infrastruttura LoRaWAN che permettesse di raccogliere ed archiviare le metriche relative alla trasmissione.
-Le fasi di raccolta ed analisi dei dati relativi alla trasmissione LoRa sono state implementate tramite una pipeline. 
-Il design dell'infrastruttura `e stato realizzato in relazione agli obiettivi di analisi e test dei dati della sperimentazione e non per una applicazione specifica. 
+Per questo motivo \`e stato necessario progettare la pipeline in modo da poter raccogliere ed archiviare le metriche relative alla trasmissione.
+
 Le scelte progettuali sono state veicolate da diversi fattori. Gli elementi che hanno guidato la progettazione sono:
 \begin{itemize}                       
 \item Infrastruttura semplificata: L'architettura del sistema non \`e stata pensata per un servizio in produzione ma per la sperimentazione, pertanto nella progettazione non sono stati valutati meccanismi di alta affidabilit\`a. I nodi dell'infrastruttura non sono ridondati. 
@@ -1571,36 +1631,16 @@ DA RIVEDERE: Il sistema \`e stato progettato per la sperimentazione, tuttavia co
 
 
 
- \section{Architettura del sistema}
-Come da specifiche, l'architettura di un sistema LoRaWAN si compone di: 
-\begin{itemize}                       
-\item LoRa Node (End Device): Dispositivo in grado di trasmettere dati via LoRa.
-\item LoRaWAN Gateway: Dispositivo in grado di ricevere dati da uno o pi\`u end device e di trasmetterli attraverso rete TCP/IP al network server.
-\item Network Server: Sistema di back-end che ha la funzione di coordinare le trasmissioni degli end device all'interno della rete LoRaWAN.
-\item Application Server: Sistema in grado di elaborare i dati ricevuti e di presentarli in maniera aggregata.
-\end{itemize}
-Ai fini della sperimentazione \`e stata implementata un'architettura LoRaWAN semplificata, in quanto priva del ruolo di network server. Il motivo deriva dal fatto che \`e stato usato un solo end device quindi le funzionalit\`a offerte dal network server non sono necessarie.  
-
-L'infrastruttura del sistema sistema impiegato nella sperimentazione si compone dei seguenti nodi:
-\begin{itemize}                       
-\item LoRa Node (End Device): Scheda di prototipazione in grado di generare e trasmettere segnali LoRa.   
-\item LoRaWAN Gateway: Dispositivo in grado di ricevere i dati dall' end device e di trasmetterli attraverso Internet all'application server. Questo nodo non effettua nessuna elaborazione o trasformazione del dato ma si limita ad instradare i pacchetti da rete LoRaWAN a rete TCP/IP.  
-\item Application Server: Espone mediante web service un'iterfaccia per la ricezione dei dati provenienti dal nodo gateway. I dati vengono parzialmente elaborati ed inviati all'egine di archiviazione.
-\item Search Engine: Sistema di archiviazione basato su paradigma NoSQL in grado di gestire le ricerche per real-time analytics.  
-\end{itemize}
-
-In relazione alla configurazione di ogni test, il pacchetto inviato dall'end device contiene le informazioni relative alla trasmissione LoRa.
-L'end device ed il gateway comunicano tramite segnale wireless LoRa. Nel momento in cui il gateway riceve il pacchetto LoRa estrae i dati contenuti nel pacchetto e senza effettuare alcuna manipolazione invoca il web service esposto dall'application server mediante metodo post del protocollo http. Il web service svolge alcune operazioni sui dati ricevuti e li trasferisce al search engine facendo una chiamata tramite interfaccia http esposta.    
-
-\section{Fasi della sperimentazione}
-La sperimentazione si articola in diverse fasi realizzate tramite una pipeline per la produzione, raccolta, elaborazione e analisi dei dati. Ogni fase della sperimentazione è realizzata mediante una componente dell'infrastruttura. 
-Di seguito vengono riepilogate le fasi della sperimentazione:
+ 
+\section{Pipeline dai dati}
+La pipeline articola in diverse fasi: 
 \begin{itemize}                       
 \item Produzione e trasmissione dei dati: Il dispositivo LoRa end device ha il compito di generare il dato contenente le metriche relative al segnale LoRa. Queste informazioni vengono opportunamente organizzate in una struttura dati che viene incapsulata in un frame LoRa ed inviato al gateway. Il nodo gateway quando riceve un pacchetto proveniente dall'end device provvede ad invocare il web service esposto dall'Application server.
 \item Elaborazione ed archiviazione dei dati: L'application server intercetta le informazioni provenienti dal gateway LoRaWAN tramite web service rest. Il servizio compie elaborazioni sul formato dei dati e li organizza per poterli archiviare mediante invocazione delle API messe a disposizione dal search engine. Il search engine è basato su paradigma NoSQL e provvede a strutturare e collezionare i dati secondo uno schema document base.
 \item Analisi dei dati: Una volta archiviati i dati relativi ad un singolo esperimento, questi vengono aggregati sulla base del codice identificativo dell'esperimento. I dati vengono estratti ed analizzati in parte attraverso il search engine ed in parte attraverso l'uso di script creati appositamente.   
 \end{itemize}
-
+In relazione alla configurazione di ogni test, il pacchetto inviato dall'end device contiene le informazioni relative alla trasmissione LoRa.
+L'end device ed il gateway comunicano tramite segnale wireless LoRa. Nel momento in cui il gateway riceve il pacchetto LoRa estrae i dati contenuti nel pacchetto e senza effettuare alcuna manipolazione invoca il web service esposto dall'application server mediante metodo post del protocollo http. Il web service svolge alcune operazioni sui dati ricevuti e li trasferisce al search engine facendo una chiamata tramite interfaccia http esposta.  
 
 
 \chapter{Implementazione}
@@ -1768,13 +1808,13 @@ I parametri analizzati permettono di valutare le caratteristiche di una qualsias
 L'obiettivo della sperimentazione \`e quello di valutare le performance della trasmissione LoRa in termini di:
 \begin{itemize}                       
 \item Packet Delivery Ratio (PDR): Rapporto in termini percentuali tra numero di pacchetti trasmessi e numero di pacchetti ricevuti.
-\item Throughput: Capacit\`a del link di trasmissione espresso in bps.
+\item Capacit\`a di trasferimento: Capacit\`a del link di trasmissione espresso in bps.
 \item Delay: Tempo impiegato da un pacchetto per essere trasmesso da sorgente a destinazione espresso in millisecondi.
 \item Received Signal Strength Indicator (RSSI): Potenza del segnale LoRa captato dal ricevitore LoRa espresso in dBm.
 \item Path Loss: Andamento della perdita di segnale al variare della distanza. Differenza tra potenza trasmissiva e potenza di segnale ricevuta in un punto al variare della distanza.
 \end{itemize}
 Le metriche raccolte vengono analizzate in funzione della variazione della distanza tra ricevitore e trasmettitore LoRa, con lo scopo di individuare le soglie entro cui il trasferimento dei dati \`e garantito. 
-La sperimentazione \`e stata svolta in contesti differenti, allo scopo di confrontare quali sono gli impatti derivanti dalle condizioni ambientali.
+La sperimentazione \`e stata svolta in contesti differenti, in modo da confrontare quali sono gli impatti derivanti dalle condizioni ambientali.
 Le trasmissioni wireless sono condizionate dalla presenza di ostacoli lungo il percorso, pertanto i tests sono stati condotti sia in area rurale che in ambiente metropolitano.    
 Sulla base delle analisi dei dati delle performance \`e possibile fare un confronto tra tecnologie eterogenee al fine di stabilire quale tra quelle esaminate potrebbe soddisfare al meglio i requisiti applicativi in relazione al contesto (al netto dei costi di realizzazione). 
 Ad esempio, in ambito metropolitano, esistono pi\`u soluzioni tecnologiche per la trasmissione dati su lungo raggio in quanto \`e forte la presenza delle reti cellulari che garantiscono la copertura di segnale. In ambito LPWAN la tecnologia Nb-IoT rappresenta un'antagonista a LoRa. 
@@ -1785,7 +1825,7 @@ Tra gli obiettivi della sperimentazione non \`e previsto un confronto tra divers
 La tecnologia LoRa permette il setup di diversi parametri che possono essere combinati tra loro per ottenere le migliori prestazioni in relazione alle condizioni di trasmissione del segnale radio. I parametri relativi alla trasmissione LoRa sono:
 \begin{itemize}                       
 \item Spreading Factor: Fattore di dispersione della modulazione del segnale LoRa. Determina il numero di chirps che occorrono per rappresentare un simbolo. Sono ammessi sei valori di SF che vanno da 6 a 12. Maggiore \`e il valore di spreading factor tanto pi\`u il segnale \`e resiliente alle interferenze e maggiore \`e la distanza di copertura del segnale. Esiste una relazione inversa tra SF e bit rate. Se si aumenta la distanza di copertura diminuisce il bit rate. Nella sperimentazione sono stati testati solo tre velori di SF.
-\item Bandwidth: Ampiezza del canale LoRa. Maggiore \`e l'ampiezza del canale e minore \`e il ritardo di trasmissione. La tecnologia LoRa supporta quattro valori ammissibili di BW che corrispondono a 31,5 KHz, 125 KHz, 250 KHz, 500 KHz. Nella sperimentazione sono stati impiegati tre valori di BW corrispondenti a 31,5 KHz, 125 KHz, 500 KHz.
+\item Bandwidth: Ampiezza del canale LoRa. Maggiore \`e l'ampiezza del canale e maggiore \`e la capacit\`a di trasmissione. La tecnologia LoRa supporta quattro valori ammissibili di BW che corrispondono a 31,5 KHz, 125 KHz, 250 KHz, 500 KHz. Nella sperimentazione sono stati impiegati tre valori di BW corrispondenti a 31,5 KHz, 125 KHz, 500 KHz.
 \item Coding Rate: Quantitativo di ridondanza applicato ai dati. Sono ammessi quattro valori possibili da 1 a 4. Maggiore \`e il coding rate e pi\`u affidabile la trasmissione a discapito del quantitativo di dati trasportabile con un singolo pacchetto. Nella sperimentazione sono stati utilizzati due valori di CR corrispondenti a 1 e 4. 
 \end{itemize}
 Sebbene sia possibile combinare tra loro tutti i valori ammissibile di SF, BW e CR i risultati che si ottengono dalle varie possibili combinazioni non differiscono in maniera sostanziale tra loro.
@@ -1800,7 +1840,7 @@ Di seguito vengono riepilogati i quattro setup rilasciati da Semtech:
 
 Per i tests sono stati adoperati i setup 1, 2 e 3. Il setup 4 oltre a non offrire prestazioni nettamente differenti dal setup 3 non \`e stato possibile implementarlo in quanto non supportato dall'hardware adoperato negli esperimenti.  
 
-Al fine di valutare le performance della trasmissione LoRa i test sono stati condotti per ogni setup in relazione alla variazione della distanza tra end node e gateway. Inoltre per poter confrontare l'andamento dei valori relativi a PDR, Throughput e Delay sono state aggiunte le seguenti variabili:   
+Al fine di valutare le performance della trasmissione LoRa i test sono stati condotti per ogni setup in relazione alla variazione della distanza tra end node e gateway. Inoltre per poter confrontare l'andamento dei valori relativi a PDR, capacit\`a di trasferimento e delay sono state aggiunte le seguenti variabili:   
 \begin{itemize}   
 \item Potenza Trasmissiva: Energia espressa in dBm utilizzata dal trasmettitore per inviare il segnale radio. Nei tests sono stati impiegati due valori: 10 dBm e 20 dBm. L'aumento del livello di energia impiegata nella trasmissione determina la soglia ottimale per la trasmissione del segnale radio.     
 \item Dimensione del pacchetto: Quantitativo di dati inviati con un singolo pacchetto. Nei tests sono stati utilizzati pacchetti di dimensioni di 44 byte e 88 byte. L'incremento del quantitativo dei dati trasmessi ha ripercussioni sul delay e throughput.   
@@ -1838,7 +1878,6 @@ $Rurale$ & $20$ & $84$\\
 \end{center}
 \end{table}
 
-
 \section{Ambiente di test}
 La sperimentazione \`e stata condotta in ambiente rurale e metropolitano, in modo da poter confrontare le performance della trasmissione LoRa nei due diversi contesti. 
 I tests in ambiente rurale sono stati condotti nelle campagne vicino Bologna. In questa area il territorio \`e totalmente pianeggiante e per lunghi tratti privo di ostacoli quali alberi o abitazioni, pertanto si presta bene alla propagazione del segnale. L'ambiente rurale \`e caratterizzato anche da minore interferenza causata da altre trasmissioni radio. In ambiente rurale il gateway \`e stato collocato sul tettuccio della mia automobile, pertanto la trasmissione non \`e ottimale. In questo caso la propagazione del segnale avviene ground to ground. 
@@ -1865,18 +1904,30 @@ Le due modalit\`a con cui sono stati condotti i test sono:
 \begin{itemize}                       
 \item Valutazione metriche a distanze prefissate: Questa metodologia di test \`e stata impiegata per il calcolo del PDR, e consiste nel stazionare per intervallo di tempo costante (5 minuti) in una posizione a distanze prefissate (50, 100, 200, 400,..., metri). Ad ogni distanza corrisponde un ExperimentID che \`e stato generato spingendo il tasto reset sull'end device.
 \item Valutazione metriche a distanze variabile: Il test consiste nel fare una passeggiata partendo dal punto in cui \`e stato fissato il gateway fino ad arrivare alla distanza massima in cui non \`e stato pi\`u possibile ricevere il segnale radio.
-I setup dei test si differenziano in base al contesto. In ambiente rurale \`e stato necessario adoperare un UPS (Uninterruptible Power Supply) per poter alimentare il dispositivo gateway, mentre la connettivit\`a \`e stata fornita mediante tethering di uno smartphone.  
-In ambiente metropolitano il gateway \`e stato alimentato tramite rete elettrica di casa e la connettivit\`a mediante interfaccia ethernet del gateway collegato alla rete domestica.
-
 \end{itemize}
 
-Durante lo svolgimento degli esperimenti, per sapere in tempo reale la distanza e se in un qualsiasi punto l'end device era in grado di trasmettere, ho consultato in maniera continuativa il log scritto dal web service. Per comodit\`a \`e stato impiegato un tablet che tramite terminale ssh mi ha permesso di accedere all'application server e di leggere i log del web service.
+I setup dei test si differenziano in base al contesto. In ambiente rurale \`e stato necessario adoperare un UPS (Uninterruptible Power Supply) per poter alimentare il dispositivo gateway, mentre la connettivit\`a \`e stata fornita mediante tethering di uno smartphone. End device \`e stato sempre alimentato tramite un power bank. 
+In ambiente metropolitano il gateway \`e stato collegato alla rete elettrica di casa e la connettivit\`a mediante interfaccia ethernet del gateway connesso alla rete domestica.
+Durante lo svolgimento degli esperimenti, per sapere in tempo reale la distanza e la presenza di seganle in punto, ho consultato in maniera continuativa il log scritto dal web service. Per comodit\`a \`e stato impiegato un tablet che tramite terminale ssh mi ha permesso di accedere all'application server e di leggere i log del web service.
 
 \section{Risultati sperimentazione}
 In questa sezione verranno illustrati i risultati ottenuti relativi alle diverse metriche analizzate.
 Per ogni metrica verranno elencati nell'ordine prima i risultati ottenuti in ambiente rurale e successivamente quelli ottenuti in ambiente metropolitano.
+Per convenzione indicher\`o con AM l'ambiente metropolitano e con AR l'ambiente rurale.
 
 \subsection{Received Signal Strength Indicator (RSSI)}
+Received Signal Strength Indicator rappresenta la misura del livello di forza del segnale percepito dal ricevitore radio in un determinato momento. Questo valore, espresso in dBm, decresce man mano che ci si allontana dalla fonte di trasmissione che in questo caso \`e l'antenna del gateway. 
+Il valore di RSSI \`e stato acquisito attraverso l'invocazione della funzione \textit{lastRssi()}.
+della libreria RHRF95 disponibile per Arduino.
+Risultati:
+\begin{itemize}    
+\item I tre setup LoRa non si discostano di molto tra loro nell'andamento.  
+\item L'andamento del segnale \`e decrescente all'aumentare della distanza.
+\item Il segnale trasmesso a 20 dBm \`e poco superiore alla media rispetto a 10 dBm. 
+\item In AM ci sono oscillazioni di segnale pi\`u ampie rispetto ad AR a causa della forte presenza di ostacoli e rumore.
+\item In AR si apprezzano maggiormente le differenze di potenza trasmessa. 
+\end{itemize}
+
 
 \begin{figure}[h]                      
 \begin{center} 
@@ -1885,6 +1936,86 @@ Per ogni metrica verranno elencati nell'ordine prima i risultati ottenuti in amb
 \end{center}
 \end{figure}
 
+\begin{figure}[h]                      
+\begin{center} 
+\includegraphics[width=\textwidth]{RSSI_confronto_AM-10dBm-42byte.png}
+\caption[RSSI confronto Ambiente Metropolitano - 10 dBm - 42 byte]{RSSI confronto Ambiente Metropolitano - 10 dBm - 42 byte}\label{fig:prima}
+\end{center}
+\end{figure}
+
+\subsection{Delay}
+Il delay rappresenta il tempo di trasmissione di un pacchetto da sorgente a destinazione espresso in millisecondi. Per il calcolo del delay sussiste un problema di temporizzazione in quanto i clock dell'end node e del gateway non sono sincronizzati, pertanto sarebbe impossibile calcolare la differenza di tempo tra l'invio e la ricezione del messaggio. Per questo motivo il delay viene calcolato dall'end node usando la funzione \textit{millis()}. Questa funzione restituisce il tempo trascorso dall'istante in cui \`e iniziato il programma in millisecondi. Questo valore viene incapsulato nel messaggio ed inviato al gateway il quale provvede a ritrasmettere indietro all'end node il messaggio ricevuto. Alla ricezione del massaggio dal gateway l'end node estrae il valore precedentemente inserito e lo sottrae al nuovo valore restituito dalla funzione millis(). In questo modo si conosce per differenza di tempo il round trip time. Il RTT viene diviso per due in modo da conoscere il tempo effettivo di propagazione da sorgente a destinazione.
+Risultati:
+\begin{itemize}    
+\item I tre setup LoRa differiscono di molto tra loro sui tempi di trasmissione, in quanto esiste una relazione diretta tra \textit{Spreading Factor} e delay. 
+Il \textit{time on air} \`e pi\`u elevato in corrispondenza di un maggior valore di \textit{SF}, di conseguenza anche il delay \`e maggiore. 
+\item In tuggli gli esperimenti e per tutti i setup il delay segue un andamento lineare. Il motivo \`e dovuto dal fatto che le onde elettromagnetiche si propagano nello spazio alla velocit\`a della luce, pertanto la distanza percorsa non \`e significativa per avere impatti sul tempo di trasmissione.
+\item Il setup LoRa 3 ha un valore di SF=9 pertanto il delay per questo setup \`e nettamente pi\`u elevato rispetto ai setup 1 e 2 che hanno entrambi valore di SF=7
+\item Il setup LoRa 2 ha il delay pi\`u basso rispetto a LoRa 1 in quanto a parit\`a di SF ha una ampiezza di banda del canale maggiore e quindi una maggiore ampiezza di banda che si traduce in un piccolo miglioramento del tempo di trasmissione.
+\item L'aumento di potenza del segnale non ha alcuna influenza sul delay.
+\item I pacchetti con dimesione 84 byte hanno un delay maggiore rispetto a quelli a 42 byte
+\item Non ci sono differenze tra AR e AM.
+\end{itemize}
+
+\begin{figure}[h]                      
+\begin{center} 
+\includegraphics[width=\textwidth]{DELAY_confronto_AR_10dBm_42byte.png}
+\caption[Delay confronto Ambiente Rurale - 10 dBm - 42 byte]{Delay confronto Ambiente Rurale - 10 dBm - 42 byte}\label{fig:prima}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]                      
+\begin{center} 
+\includegraphics[width=\textwidth]{DELAY_confronto_AM_10dBm_42byte.png}
+\caption[Delay confronto Ambiente Metropolitano - 10 dBm - 42 byte]{Delay confronto Ambiente Metropolitano - 10 dBm - 42 byte}\label{fig:prima}
+\end{center}
+\end{figure}
+
+
+\subsection{Capacit\`a di trasferimento}
+La capacit\`a di trasferimento \`e stato calcolata dividendo la dimensione del pacchetto per il delay. Questa misura vine espressa in bps.
+La dimensione del pacchetto \`e espressa in byte pertanto \`e stata convertita in bit, mentre il delay espresso in secondi \`e stao convertito in secondi.
+Esiste una reazione inversa tra throughput e delay, in quanto all'aumentare del delay diminuisce il throughput.
+Risultati:
+\begin{itemize}    
+\item I tre setup LoRa presentano valori differenti tra loro.
+\item Il throughput migliore \`e relativo al setup 2 che si attesta attorno ai 2500 bps.
+\item Il throughput peggiore \`e relativo al setup 3 che si attesta attorno ai 100 bps.
+\item Il setup LoRa 2 ha il delay pi\`u basso rispetto a LoRa 1 in quanto a parit\`a di SF ha una ampiezza di banda del canale maggiore e quindi una maggiore ampiezza di banda che si traduce in un miglioramento del tempo di trasmissione.
+\item L'aumento di potenza del segnale non ha alcuna influenza sul throughput.
+\item Non ci sono differenze tra AR e AM.
+\end{itemize}
+
+\subsection{Packet Delivery Ratio}
+Il Packet Delivery Ratio (PDR) indica il rapporto tra numero di pacchetti trasmessi e numero di pacchetti ricevuti. Questa misura fornisce la stima di quanto sia affidabile il canale di comunicazione. 
+
+\begin{figure}[h]                      
+\begin{center} 
+\includegraphics[width=\textwidth]{PDR_BAR_confronto_AR_10dBm-42byte.png}
+\caption[Pdr confronto AR - 10 dBm - 42 byte]{Pdr confronto AM - 10 dBm - 42 byte}\label{fig:prima}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]                      
+\begin{center} 
+\includegraphics[width=\textwidth]{PDR_BAR_confronto_AM_10dBm-42byte.png}
+\caption[Pdr confronto AM - 10 dBm - 42 byte]{Pdr confronto AM - 10 dBm - 42 byte}\label{fig:prima}
+\end{center}
+\end{figure}
+
+
+
+
+
+\chapter{Sviluppi futuri e conclusioni}
+
+
+
+
+\appendix
+\chapter{Grafici sperimentazione}
+\section{Received Signal Strength Indicator}
 \begin{figure}[h]                      
 \begin{center} 
 \includegraphics[width=\textwidth]{RSSI_confronto_AR-10dBm-84byte.png}
@@ -1899,21 +2030,14 @@ Per ogni metrica verranno elencati nell'ordine prima i risultati ottenuti in amb
 \end{center}
 \end{figure}
 
-\begin{figure}[h]                      
+\begin{figure}[h!]                      
 \begin{center} 
 \includegraphics[width=\textwidth]{RSSI_confronto_AR-20dBm-84byte.png}
 \caption[RSSI confronto Ambiente Rurale - 20 dBm - 84 byte]{RSSI confronto Ambiente Rurale - 20 dBm - 84 byte}\label{fig:prima}
 \end{center}
 \end{figure}
 
-\begin{figure}[h]                      
-\begin{center} 
-\includegraphics[width=\textwidth]{RSSI_confronto_AM-10dBm-42byte.png}
-\caption[RSSI confronto Ambiente Metropolitano - 10 dBm - 42 byte]{RSSI confronto Ambiente Metropolitano - 10 dBm - 42 byte}\label{fig:prima}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]                      
+\begin{figure}[h!]                      
 \begin{center} 
 \includegraphics[width=\textwidth]{RSSI_confronto_AM-10dBm-84byte.png}
 \caption[RSSI confronto Ambiente Metropolitano - 10 dBm - 84 byte]{RSSI confronto Ambiente Metropolitano - 10 dBm - 84 byte}\label{fig:prima}
@@ -1934,19 +2058,7 @@ Per ogni metrica verranno elencati nell'ordine prima i risultati ottenuti in amb
 \end{center}
 \end{figure}
 
-
-
-
-\subsection{Path Loss}
-Il Path Loss viene calcolato descrive la perdita di potenza di segnale all'aumentare della distanza ed \`e calcolato nel seguente modo:
-\begin{equation*} PL = TXPOWER - RSSI \end{equation*}
-\begin{figure}[h]                      
-\begin{center} 
-\includegraphics[width=\textwidth]{PATH_LOSS_confronto_AR_10dBm_42byte.png}
-\caption[Path Loss confronto Ambiente Rurale - 10 dBm - 42 byte]{Path Loss confronto Ambiente Rurale - 10 dBm - 42 byte}\label{fig:prima}
-\end{center}
-\end{figure}
-
+\section{Path Loss}
 \begin{figure}[h]                      
 \begin{center} 
 \includegraphics[width=\textwidth]{PATH_LOSS_confronto_AR_10dBm_84byte.png}
@@ -1965,13 +2077,6 @@ Il Path Loss viene calcolato descrive la perdita di potenza di segnale all'aumen
 \begin{center} 
 \includegraphics[width=\textwidth]{PATH_LOSS_confronto_AR_20dBm_84byte.png}
 \caption[Path Loss confronto Ambiente Rurale - 20 dBm - 84 byte]{Path Loss confronto Ambiente Rurale - 20 dBm - 84 byte}\label{fig:prima}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]                      
-\begin{center} 
-\includegraphics[width=\textwidth]{PATH_LOSS_confronto_AM_10dBm_42byte.png}
-\caption[Path Loss confronto Ambiente Metropolitano - 10 dBm - 42 byte]{Path Loss confronto Ambiente Metropolitano - 10 dBm - 42 byte}\label{fig:prima}
 \end{center}
 \end{figure}
 
@@ -1996,44 +2101,44 @@ Il Path Loss viene calcolato descrive la perdita di potenza di segnale all'aumen
 \end{center}
 \end{figure}
 
-
-\subsection{Delay}
+\section{Delay}
 \begin{figure}[h]                      
 \begin{center} 
-\includegraphics[width=\textwidth]{DELAY_confronto_AM_10dBm_42byte.png}
-\caption[Delay confronto Ambiente Rurale - 10 dBm - 42 byte]{Delay confronto Ambiente Rurale - 10 dBm - 42 byte}\label{fig:prima}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]                      
-\begin{center} 
-\includegraphics[width=\textwidth]{DELAY_confronto_AM_10dBm_84byte.png}
+\includegraphics[width=\textwidth]{DELAY_confronto_AR_10dBm_84byte.png}
 \caption[Delay confronto Ambiente Rurale - 10 dBm - 84 byte]{Delay confronto Ambiente Rurale - 10 dBm - 84 byte}\label{fig:prima}
 \end{center}
 \end{figure}
 
 \begin{figure}[h]                      
 \begin{center} 
-\includegraphics[width=\textwidth]{DELAY_confronto_AM_20dBm_42byte.png}
+\includegraphics[width=\textwidth]{DELAY_confronto_AR_20dBm_42byte.png}
 \caption[Delay confronto Ambiente Rurale - 20 dBm - 42 byte]{Delay confronto Ambiente Rurale - 20 dBm - 42 byte}\label{fig:prima}
 \end{center}
 \end{figure}
 
 \begin{figure}[h]                      
 \begin{center} 
-\includegraphics[width=\textwidth]{DELAY_confronto_AM_20dBm_84byte.png}
+\includegraphics[width=\textwidth]{DELAY_confronto_AR_20dBm_84byte.png}
 \caption[Delay confronto Ambiente Rurale - 20 dBm - 84 byte]{Delay confronto Ambiente Rurale - 20 dBm - 84 byte}\label{fig:prima}
 \end{center}
 \end{figure}
 
-\subsection{Throughput}
 \begin{figure}[h]                      
 \begin{center} 
-\includegraphics[width=\textwidth]{THROUGHPUT_confronto_AR_10dBm_42byte.png}
-\caption[Throughput confronto Ambiente Rurale - 10 dBm - 42 byte]{Throughput confronto Ambiente Rurale - 10 dBm - 42 byte}\label{fig:prima}
+\includegraphics[width=\textwidth]{DELAY_confronto_AM_20dBm_42byte.png}
+\caption[Delay confronto Ambiente Metropolitano - 20 dBm - 42 byte]{Delay confronto Ambiente Metropolitano - 20 dBm - 42 byte}\label{fig:prima}
 \end{center}
 \end{figure}
 
+\begin{figure}[h]                      
+\begin{center} 
+\includegraphics[width=\textwidth]{DELAY_confronto_AM_20dBm_84byte.png}
+\caption[Delay confronto Ambiente Metropolitano - 20 dBm - 84 byte]{Delay confronto Ambiente Metropolitano - 20 dBm - 84 byte}\label{fig:prima}
+\end{center}
+\end{figure}
+
+
+\section{Throughput}
 \begin{figure}[h]                      
 \begin{center} 
 \includegraphics[width=\textwidth]{THROUGHPUT_confronto_AR_10dBm_84byte.png}
@@ -2052,13 +2157,6 @@ Il Path Loss viene calcolato descrive la perdita di potenza di segnale all'aumen
 \begin{center} 
 \includegraphics[width=\textwidth]{THROUGHPUT_confronto_AR_20dBm_84byte.png}
 \caption[Throughput confronto Ambiente Rurale - 20 dBm - 84 byte]{Throughput confronto Ambiente Rurale - 20 dBm - 84 byte}\label{fig:prima}
-\end{center}
-\end{figure}
-
-\begin{figure}[h]                      
-\begin{center} 
-\includegraphics[width=\textwidth]{THROUGHPUT_confronto_AM_10dBm_42byte.png}
-\caption[Throughput confronto Ambiente Metropolitano - 10 dBm - 42 byte]{Throughput confronto Ambiente Metropolitano - 10 dBm - 42 byte}\label{fig:prima}
 \end{center}
 \end{figure}
 
@@ -2084,23 +2182,9 @@ Il Path Loss viene calcolato descrive la perdita di potenza di segnale all'aumen
 \end{figure}
 
 
-\subsection{Packet Delivery Ratio}
-\begin{figure}[h]                      
-\begin{center} 
-\includegraphics[width=\textwidth]{PDR_BAR_confronto_AM_10dBm-42byte.png}
-\caption[Pdr confronto AM - 1odBm - 42 byte]{Pdr confronto AM - 1odBm - 42 byte}\label{fig:prima}
-\end{center}
-\end{figure}
 
 
-
-\chapter{Sviluppi futuri}
-
-\chapter{Conclusioni}
-
-
-
-
+%\input{chapters/appendix}
 
 
 \begin{thebibliography}{90}             %crea l'ambiente bibliografia
@@ -2162,13 +2246,20 @@ S. Kartakis, B. D. Choudhary, A. D. Gluhak, L. Lambrinos, and J. A. McCann,
 Lingling Li, Jiuchun Ren, Qian Zhu - Department of Communication Science and Engineering
 Fudan University, Shanghai, China
 
-\bibitem{K21} Semtech's datasheets : https://www.semtech.com/uploads/documents/sx1272.pdf  
+\bibitem{K21} Semtech's datasheets : https://www.semtech.com/uploads/documents/sx1272.pdf
 
 \bibitem{K22} Comparison of LoRaWAN Classes and their Power Consumption: Phui San Cheong, Johan Bergs, Chris Hawinkel, Jeroen Famaey IDLab, University of Antwerp imec, Antwerp, Belgium Nokia Bell Labs, Antwerp, Belgium
 
 \bibitem{K23} Understanding the Limits of LoRaWAN : Ferran Adelantado, Xavier Vilajosana, Pere Tuset-Peiro, Borja Martinez, Joan Melià-Seguí, Thomas Watteyne.
 
 \bibitem{K24} Exploring the Security Vulnerabilities of LoRa :  Emekcan Aras, Gowri Sankar Ramachandran, Piers Lawrence and Danny Hughes - iMinds-DistriNet, KU Leuven, 3001 Leuven, Belgium.
+
+\bibitem{K25} \hyperref[industry4]{https://www.researchgate.net/publication/322505680\_What\_Drives\_the\_Implementation\_of\_Industry\_40\_The\_Role\_of\_Opportunities\_and\_Challenges\_in\_the\_Context\_of\_Sustainability}
+
+\bibitem{K26} Past, present and future of Industry 4.0. A systematic literature review and research agenda proposal: Yongxin Liao, Fernando Deschamps, Eduardo de Freitas Rocha Loures, Luiz Felipe Pierin Ramos
+\hyperref[industry4]{https://www.tandfonline.com/doi/full/10.1080/00207543.2017.1308576}
+
+\bibitem{K27} Sistemi informativi aziendali e agricoltura di precisione: Fabrizio Mazzetto, Michael Riedel, Pasqualina Sacco - Agricoltura di precisione - Edagricole  
 
 
 
